@@ -18,9 +18,9 @@ class word_class:
         self.word_search = word_search
         self.file_string = file_string
         # finding the times of occurance of the word given
-        occurance = re.findall(self.word_search, self.file_string, re.M | re.I)
-        print("Total no. of the word -"+self.word_search+"- present in the given text file is: ", len(occurance))
-        return (len(occurance))
+        occ = re.findall(self.word_search, self.file_string, re.M | re.I)
+        print("Total no.of "+self.word_search+" in text file is: ", len(occ))
+        return (len(occ))
 # func for printing the string of 3 words,before and after the word to be found
 
 
