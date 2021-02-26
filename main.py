@@ -43,7 +43,7 @@ def word_string(length_occurance):
         for k in range(len(split())):
             if re.search(word_search, split()[k], re.M | re.I):
                 if k == 0:
-                    op_str = (split()[k]+" "+split()[k+1])
+                    op_str = (split()[k] + " " + split()[k+1])
                     final_output.write(op_str + '\n')
                 elif k == len(split())-1:
                     op_str = (split()[k-1] + " " + split()[k])
